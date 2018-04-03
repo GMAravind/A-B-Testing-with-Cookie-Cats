@@ -7,11 +7,16 @@ It's a classic "connect three"-style puzzle game where the player must connect t
 Experiment:
 This experiment is to understand if increasing the threshold for a break from gate 30 to gate 40 improves customer retention.
 
-Data Overview:
+**Data Overview:**
+
 userid - a unique number that identifies each player.
+
 version - whether the player was put in the control group (gate_30 - a gate at level 30) or the group with the moved gate (gate_40 - a gate at level 40).
+
 sum_gamerounds - the number of game rounds played by the player during the first 14 days after install.
+
 retention_1 - did the player come back and play 1 day after installing?
+
 retention_7 - did the player come back and play 7 days after installing?
 
 
