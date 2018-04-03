@@ -1,10 +1,10 @@
 # A-B-Testing-with-Cookie-Cats
 
-Introduction:
+**Introduction:**
 Cookie Cats is a hugely popular mobile puzzle game developed by Tactile Entertainment. 
 It's a classic "connect three"-style puzzle game where the player must connect tiles of the same color to clear the board and win the level. Hedonic adaptation is the tendency for people to get less and less enjoyment out of a fun activity over time if that activity is undertaken continuously. By forcing players to take a break when they reach a gate, their enjoyment of the game is prolonged. As players progress through the levels of the game, they will occasionally encounter gates that force them to wait a non-trivial amount of time or make an in-app purchase to progress. In addition to driving in-app purchases, these gates serve the important purpose of giving players an enforced break from playing the game, hopefully resulting in that the player's enjoyment of the game being increased and prolonged.
 
-Experiment:
+**Experiment:**
 This experiment is to understand if increasing the threshold for a break from gate 30 to gate 40 improves customer retention.
 
 **Data Overview:**
@@ -18,6 +18,26 @@ sum_gamerounds - the number of game rounds played by the player during the first
 retention_1 - did the player come back and play 1 day after installing?
 
 retention_7 - did the player come back and play 7 days after installing?
+
+**Methodology:**
+
+Step 1:
+Bootstrap the sample 500 times compute the % difference in rentention customers between test and control group.
+
+% difference - (control - test)/test
+
+Step 2:
+Plot a density plot to understand the distribution of the calculated metric for this 500 bootstrapped samples
+
+Step 3:
+Calculate the probability of times upon 500 samples where % diff is greater than 0. This will provide the probability that gate 30 is better in retention.
+
+**Conclusion:**
+The retention is better for both 1 day retention and 7 day retention when the gate level is 30.
+
+
+
+
 
 
 
